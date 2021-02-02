@@ -1,0 +1,10 @@
+tensorflow-gpu
+opencv-python
+lxml
+tqdm
+matplotlib
+easydict
+pillow
+tensorflow
+numpy
+comet_ml

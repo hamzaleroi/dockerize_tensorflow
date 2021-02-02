@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  infer:
+    build:
+      context: .
+      dockerfile: Dockerfile.infer
+    ports:
+     - "5000:5000"
+    volumes:
+      - "./data:/app/data"
+      - "./weights:/app/src/ai/models/weights"
+# volumes:
+#   data:
+#     driver: 'local'
+#     driver_opts:
+#       type: 'none'
+#       o: 'bind'
+#       device: './data'
+#   weights:
+#     driver: 'local'
+#     driver_opts:
+#       type: 'none'
+#       o: 'bind'
+#       device: './weights'
